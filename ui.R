@@ -12,7 +12,7 @@ shinyUI(pageWithSidebar(
                but I cannot succeed in opening the files..
                The PDF keeps loading,
                while the HTML just shows a link to a tmp file..
-               The reports are succesfully created on the server, though.."),
+               The reports are successfully created on the server, though.."),
   
   ## Main panel
   mainPanel(
