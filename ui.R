@@ -6,10 +6,13 @@ shinyUI(pageWithSidebar(
   
   ## Application title
   headerPanel("Report"),
+
+  ## Sidebar panel
+  sidebarPanel(),
   
   ## Main panel
   mainPanel(
     downloadButton("downloadPDF", "Download nice PDF report"),
-	downloadButton("downloadHTML", "Download nice HTML report")
+    downloadButton("downloadHTML", "Download nice HTML report")
   )
 ))
