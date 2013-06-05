@@ -9,10 +9,9 @@ shinyUI(pageWithSidebar(
 
   ## Sidebar panel
   sidebarPanel("I want to generate PDF or HTML reports through Shiny,
-               but I cannot succeed in opening the files..
-               The PDF keeps loading,
-               while the HTML just shows a link to a tmp file..
-               The reports are successfully created on the server, though.."),
+               but I could not succeed in opening the files..
+			   With 'file.copy()', the PDF report now opens,
+               but the HTML still shows a link to a tmp file.."),
   
   ## Main panel
   mainPanel(
