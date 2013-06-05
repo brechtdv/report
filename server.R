@@ -4,7 +4,9 @@ shinyServer(function(input, output) {
     downloadHandler(filename = "report.pdf",
                     content = function(file){
                       knit2pdf("report.Rnw")
-                      file.rename("report.pdf", file)
+                      file.copy("report.pdf", file)
+                      file.remove("report.pdf", "report.tex",
+                                  "report.aux", "report.log")
                     },
                     contentType = "application/pdf"
   )
@@ -13,7 +15,8 @@ shinyServer(function(input, output) {
     downloadHandler(filename = "report.html",
                     content = function(file){
                       knit2html("report.Rmd")
-                      file.rename("report.html", file)
+                      file.copy("report.html", file)
+                      file.remove("report.html", "report.md")
                     },
                     contentType = "text/html"
   )
