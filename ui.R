@@ -6,12 +6,16 @@ shinyUI(pageWithSidebar(
   
   ## Application title
   headerPanel("Report"),
-
+  
   ## Sidebar panel
-  sidebarPanel("I want to generate PDF or HTML reports through Shiny,
-               but I could not succeed in opening the files..
-			   With 'file.copy()', the PDF report now opens,
-               but the HTML still shows a link to a tmp file.."),
+  sidebarPanel("This simple Shiny app demonstrates",
+               "how to generate PDF or HTML reports through Shiny",
+               br(),
+               br(),
+               "The source code is available on GitHub:",
+               a(href = "https://github.com/brechtdv/report",
+                 "https://github.com/brechtdv/report")
+  ),
   
   ## Main panel
   mainPanel(
