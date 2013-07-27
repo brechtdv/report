@@ -2,6 +2,9 @@
 
 \begin{document}
 
+\title{\Sexpr{input$title}}
+\maketitle
+
 Here is a code chunk.
 
 <<foo, fig.height=4>>=

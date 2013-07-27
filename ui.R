@@ -19,7 +19,11 @@ shinyUI(pageWithSidebar(
   
   ## Main panel
   mainPanel(
-    downloadButton("downloadPDF", "Download nice PDF report"),
-    downloadButton("downloadHTML", "Download nice HTML report")
+    wellPanel(
+      textInput("title",
+                "Report title:",
+                "My shiny report")),
+    downloadButton("downloadPDF", "Download shiny PDF report"),
+    downloadButton("downloadHTML", "Download shiny HTML report")
   )
 ))
